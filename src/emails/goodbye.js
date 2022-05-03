@@ -1,7 +1,7 @@
 const sgmail=require('@sendgrid/mail')
-const sendgridapikey="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"
+//const sendgridapikey="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"
 
-sgmail.setApiKey(sendgridapikey)
+sgmail.setApiKey(process.env.SENDGRIDAPIKEY)
 
 const goodbyemail=(mail,name)=>{
     sgmail.send({
