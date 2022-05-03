@@ -20,7 +20,7 @@ app.use(require("./routers/userroute"))
 
 app.get("/",(req,res)=>{
 
-    res.send('Hello');
+    res.send('Hello ther');
 })
 app.get("*",(req,res)=>{
 
