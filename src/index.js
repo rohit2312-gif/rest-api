@@ -18,7 +18,10 @@ app.use(express.json()),
 app.use(require("./routers/tasksroute"))
 app.use(require("./routers/userroute"))
 
+app.get("/",(req,res)=>{
 
+    res.send('Hello');
+})
 app.get("*",(req,res)=>{
 
 
