@@ -14,7 +14,7 @@ const userSchema=mongoose.Schema(
             required:true
         },
         password:{
-            minlength:7,
+            minlength:6,
         type:String,
         required:true,
         validate(value){
